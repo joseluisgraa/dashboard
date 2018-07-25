@@ -1,0 +1,9 @@
+<h2>Qualification Details</h2>
+
+<ul class="qualifications">
+  <li *ngFor="let qualification of qualifications">
+    <a routerLink="/detail/{{qualification.id}}">
+      <span class="badge">{{qualification.name}}</span> {{qualification.tasksInQueue}}
+    </a>
+  </li>
+</ul>

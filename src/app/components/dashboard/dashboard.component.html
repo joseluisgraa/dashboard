@@ -1,0 +1,9 @@
+<h3>Top Heroes</h3>
+<div class="grid grid-pad">
+  <a *ngFor="let qualification of qualifications" class="col-1-4"
+      routerLink="/detail/{{qualification.id}}">
+    <div class="module qualification">
+      <h4>{{qualification.name}}</h4>
+    </div>
+  </a>
+</div>
